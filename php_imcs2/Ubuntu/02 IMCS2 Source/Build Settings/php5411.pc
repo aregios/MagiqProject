@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/user/src/php-5.4.11-src
+exec_prefix=/usr/lib/apache2/modules
+
+includedir=${prefix}
+libdir=${exec_prefix}
+
+Name: PHP5411 
+Description: PHP5411 
+Version: 5.4.11
+Libs: -L${libdir} -lphp5
+Cflags: -I${includedir} -I${includedir}/main -I${includedir}/Zend -I${includedir}/TSRM 

@@ -1,0 +1,4 @@
+
+
+Create "PHP_SRC_DIR" Environment Variable and set the value "C:\wamp\bin\php\php5.4.3_src"
+Create "PHP_BIN_DIR" Environment Variable and set the value "C:\wamp\bin\php\php5.4.3"

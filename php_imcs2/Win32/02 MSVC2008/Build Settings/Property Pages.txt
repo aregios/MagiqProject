@@ -1,0 +1,4 @@
+Add these to project. (View -> Other Windows -> Propery Manager)
+
+
+Assumes existence of "OpenCV_DIR", "PHP_SRC_DIR" and "PHP_BIN_DIR" environment variables

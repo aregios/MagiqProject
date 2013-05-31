@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family:"Roboto";
+    font-weight:normal;
+    font-style:normal;
+    src:url('roboto/roboto-regular.ttf');
+    src:local("Roboto"), local("RobotoRegular"), local("Roboto-Regular"), url('roboto/roboto-regular.eot?#iefix') format('embedded-opentype'), url('roboto/roboto-regular.woff') format('woff'), url('roboto/roboto-regular.ttf') format('truetype'), url('roboto/roboto-regular.svg#RobotoRegular') format('svg');
+}
+            
+.darkness {background-color:#0F0F0F;}
+.textprimary {font-family:Roboto; font-size:14pt; color:white;}
+.textsecondary {font-size:9pt; color:gray;}
+.cellimage {vertical-align:middle; border:none; float:left }
+.cellimageright {vertical-align:middle; border:none; float:right }
+.cellmatches {padding:2px; text-align:center; border:solid 1px gray;}

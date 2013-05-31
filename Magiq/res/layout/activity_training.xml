@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<TableLayout
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"   
+		android:shrinkColumns="0"
+		android:stretchColumns="1"> 
+		
+		<TableRow
+			android:id="@+id/paneDescription"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_description"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			<EditText
+				android:id="@+id/textDescription"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="text"
+				android:maxLength="255"
+				android:hint="@string/hint_description"
+				android:textAppearance="?android:attr/textAppearanceSmall" >
+				<requestFocus />
+			</EditText>
+		</TableRow>
+		
+		<TableRow
+			android:id="@+id/paneBegin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip"
+			android:gravity="center">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:gravity="center"
+				android:text="@string/label_begin"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		   	
+		<TableRow
+			android:id="@+id/paneCoords1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_latitude"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+			      
+			<TextView
+				android:id="@+id/textLatitude"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/default_coord"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+			    
+		<TableRow
+			android:id="@+id/paneCoords2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+		    	    	    
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_longitude"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+			   	    
+			<TextView
+				android:id="@+id/textLongitude"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/default_coord"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+		</TableRow>
+		
+	</TableLayout>
+	
+	<ImageView
+		android:id="@+id/imageMain"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_gravity="fill_vertical"
+		android:layout_weight="0.43"
+		android:contentDescription="@string/default_notext"
+		android:scaleType="centerInside"
+		android:src="@drawable/no_image" />    
+	        
+	<LinearLayout
+		android:id="@+id/paneButtons"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dip"
+		android:layout_marginBottom="12dip"
+		android:layout_marginLeft="4dip"
+		android:layout_marginRight="4dip"
+		android:orientation="horizontal" >
+		
+		<Button
+			android:id="@+id/buttonCapture"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onCaptureClick"
+			android:text="@string/button_capture" />
+		
+		<Button
+			android:id="@+id/buttonSave"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onSaveClick"
+			android:text="@string/button_save" />
+		
+		<Button
+			android:id="@+id/buttonSubmit"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onSubmitClick"
+			android:text="@string/button_submit" />
+	</LinearLayout>
+
+</LinearLayout>

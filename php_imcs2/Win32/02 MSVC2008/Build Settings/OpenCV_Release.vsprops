@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1253"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="OpenCV_Release"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(OPENCV_DIR)\include"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="opencv_core242.lib opencv_imgproc242.lib opencv_highgui242.lib"
+		AdditionalLibraryDirectories="$(OPENCV_DIR)\x86\vc9\lib"
+	/>
+</VisualStudioPropertySheet>

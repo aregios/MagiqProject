@@ -1,0 +1,222 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"	    
+		android:shrinkColumns="0"
+		android:stretchColumns="1"> 
+		
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_compare_method"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<Spinner
+				android:id="@+id/spinCompareMethod"    
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown"/>
+		</TableRow>
+		
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip" 
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_reduce_factor"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<Spinner    
+				android:id="@+id/spinReduceFactor"    
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:spinnerMode="dropdown"/>
+		</TableRow>
+		   
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:id="@+id/labelThreshold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_threshold"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<EditText
+				android:id="@+id/textThreshold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="numberDecimal"
+				android:maxLength="6"
+				android:textAppearance="?android:attr/textAppearanceSmall">
+			</EditText>
+		</TableRow>
+		   	    
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_max_tests"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<EditText
+				android:id="@+id/textMaxTests"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="numberDecimal"
+				android:maxLength="3"
+				android:textAppearance="?android:attr/textAppearanceSmall">
+			</EditText>
+		</TableRow>
+		      	        
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_host"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<EditText
+				android:id="@+id/textHost"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="text"
+				android:textAppearance="?android:attr/textAppearanceSmall">
+			</EditText>
+		</TableRow>
+		   
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_connection_timeout"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<EditText
+				android:id="@+id/textConnTimeout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="numberDecimal"
+				android:maxLength="3"
+				android:textAppearance="?android:attr/textAppearanceSmall">
+			</EditText>
+		</TableRow>
+		   
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_enable_logging"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<CheckBox
+				android:id="@+id/chkEnableLogging"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:onClick="onCheckboxClicked"/>
+		</TableRow>	   		    
+		  	
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_image_compression"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<CheckBox
+				android:id="@+id/chkImageCompression"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:onClick="onCheckboxClicked"/>
+		</TableRow>	   		    
+		  	
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"                      
+			android:layout_marginLeft="8dip"
+			android:layout_marginRight="8dip">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/setting_image_quality"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+			
+			<EditText
+				android:id="@+id/textImageQuality"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="numberDecimal"
+				android:maxLength="3"
+				android:textAppearance="?android:attr/textAppearanceSmall">
+			</EditText>
+		</TableRow>
+		
+	</TableLayout>
+	
+</ScrollView>	

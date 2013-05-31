@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1253"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="PHPExt_Debug"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(PHP_SRC_DIR)&quot;;&quot;$(PHP_SRC_DIR)\main&quot;;&quot;$(PHP_SRC_DIR)\TSRM&quot;;&quot;$(PHP_SRC_DIR)\win32&quot;;&quot;$(PHP_SRC_DIR)\Zend&quot;"
+		PreprocessorDefinitions="PHP_WIN32;ZEND_WIN32;ZTS=1;ZEND_DEBUG=0"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="php5ts.lib"
+		AdditionalLibraryDirectories="&quot;$(PHP_BIN_DIR)\dev&quot;"
+	/>
+</VisualStudioPropertySheet>

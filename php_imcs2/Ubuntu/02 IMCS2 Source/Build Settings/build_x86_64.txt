@@ -1,0 +1,1 @@
+g++ -fPIC -ggdb `pkg-config --cflags opencv`  `pkg-config --cflags php5411` imcs_engine.cpp imcs_factory.cpp php_imcs.cpp -shared -o php_imcs2.so `pkg-config --libs opencv` `pkg-config --libs php5411`;
